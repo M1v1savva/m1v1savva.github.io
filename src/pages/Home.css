@@ -1,24 +1,19 @@
-.Home-header {
-    min-height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-}
-  
 .switch {
     margin-top: 2vh;
     margin-bottom: 0vh !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .switch-caption {
     margin-top: 2vh;
     font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .readme {
-    width: 700px !important;
+    max-width: 750px;
     margin: 2vh auto auto auto;
     text-align: left;
 }

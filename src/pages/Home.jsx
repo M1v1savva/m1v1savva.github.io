@@ -49,18 +49,16 @@ function Home() {
 
     return (
         <div className={`${theme}`}>
-          <header className="App-header">
-            <DarkModeSwitch
-              className='switch'
-              style={{ marginBottom: '2rem' }}
-              checked={theme == 'dark' ? true : false}
-              onChange={toggleDarkMode}
-              size={60}
-            />
-            <p className='switch-caption'>
-              Click here to switch to { theme == 'dark' ? 'light' : 'dark' } theme
-            </p>
-          </header>
+          <DarkModeSwitch
+            className='switch'
+            style={{ marginBottom: '2rem' }}
+            checked={theme == 'dark' ? true : false}
+            onChange={toggleDarkMode}
+            size={60}
+          />
+          <p className='switch-caption'>
+            Click here to switch to { theme == 'dark' ? 'light' : 'dark' } theme
+          </p>
           {getReadme()}
         </div>
       )
