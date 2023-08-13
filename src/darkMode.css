@@ -1,12 +1,14 @@
 .dark {
-    background-color: #333;
+    background-color: #121212;
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .light {
-    background-color: #fff;
+    background-color: #e0e0e0;
     color: #333;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
