@@ -1,14 +1,22 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import Home from "./pages/Home"
+import { React, useState } from 'react'
+import MobileLayout from './layouts/MobileLayout'
+import PClayout from './layouts/PClayout'
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-      </Routes>
-    </BrowserRouter>
-  )
+  const [width, setWidth] = useState(window.innerWidth)
+  const [height, setHeight] = useState(window.innerHeight)
+
+  const [onMobile, setOnMobile] = useState(window.innerHeight > window.innerWidth)
+
+  if (onMobile == true) {
+    return (
+      <MobileLayout />
+    )
+  } else {
+    return (
+      <PClayout />
+    )
+  } 
 }
 
 export default App

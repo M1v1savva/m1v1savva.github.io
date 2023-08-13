@@ -1,0 +1,58 @@
+.socials-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.socials-container img {
+	max-width: 30vw;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2vh;
+}
+
+.dark .qr-box {
+	border-radius: 2vw;
+	font-weight: bold;
+	text-align: center;
+	padding: 2.1vw;
+	box-shadow:
+		inset #59CA4E  0 0 0 0.3vw;
+}
+
+.dark .Collapsible {
+	border-radius: 2vw;
+	font-weight: bold;
+	text-align: center;
+	padding: 2.1vw;
+	box-shadow:
+		inset #59CA4E  0 0 0 0.3vw;
+}
+
+.light .qr-box {
+	border-radius: 2vw;
+	font-weight: bold;
+	text-align: center;
+	padding: 2.1vw;
+	box-shadow:
+		inset #f950ff  0 0 0 0.3vw;
+}
+
+.light .Collapsible {
+	border-radius: 2vw;
+	font-weight: bold;
+	text-align: center;
+	padding: 2.1vw;
+	box-shadow:
+		inset #f950ff  0 0 0 0.3vw;
+}
