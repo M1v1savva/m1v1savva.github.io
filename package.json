@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "homepage": "https://M1v1savva.github.io",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@react-pdf/renderer": "^3.1.12",
     "@testing-library/jest-dom": "^5.17.0",
@@ -21,7 +21,6 @@
     "react-toggle-dark-mode": "^1.1.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

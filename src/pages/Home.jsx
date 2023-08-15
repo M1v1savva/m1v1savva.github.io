@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
 
 import Cache from './../components/Cache'
@@ -13,6 +14,15 @@ import './darkMode.css'
 import './Home.css'
 
 function Home() {
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        const queryParameters = new URLSearchParams(window.location.search)
+        if (window.location.search.includes('cv')) {		
+            navigate('/cv')
+        }
+    }, [])
+
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') || 'dark'
     )

@@ -3,11 +3,13 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './Projects.css'
 
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
-	const to_render = () => {
-		redirect(`https://github.com/M1v1savva/mini-renderer`)
+	const navigate = useNavigate()
+
+	const final_url = () => {
+			return <p>kek</p>
 	}
 
 	return (
@@ -16,6 +18,8 @@ function Projects() {
 			<div className='top'>
 				<h2>Personal projects</h2>
 			</div>
+			<p>start url: {window.location.search}</p>
+			<p>final url: {final_url()}</p>
 			<br/>
 			<div className='row1'>
 			<Card bg='Secondary' style={{ width: '12rem', height: '22rem' }}>
@@ -25,7 +29,8 @@ function Projects() {
 					<Card.Text>
 						3d graphics
 					</Card.Text>
-					<Button onClick={() => {window.location.href = 'https://github.com/M1v1savva/mini-renderer'}} variant="primary">Go to github</Button>
+					<Button onClick={() => {navigate('/cv')}}>See cv</Button>
+					{/*<Button onClick={() => {window.location.href = 'https://github.com/M1v1savva/mini-renderer'}} variant="primary">Go to github</Button> */}
 				</Card.Body>
 			</Card>
 
