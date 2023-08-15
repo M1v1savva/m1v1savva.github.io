@@ -8,8 +8,7 @@ function CPjourney() {
 			<h2>My competitive programming journey</h2>
 			</div>
 			<br/>
-			<p>Competitive programming is like math competitions but with programming, 
-				so it's twice as cool. 
+			<p>Competitive programming is like math competitions but with programming.
 				<br/>
 				I have been involved with it for 6 years, though I mostly practiced during
 				 the first 2 and later focused on other things.
@@ -24,8 +23,8 @@ function CPjourney() {
 				I still solve problems that once in a while catch my attention 
 				and occasionally coach to make some income. 
 				<br/>
-				For some time I was trying to hit master on codeforces 
-				and after many attempts I managed to do it.
+				For some time I was trying to hit master on codeforces (online competitions host)
+				and after many attempts I managed to do it - <a href='https://codeforces.com/profile/M1v1savva1601'>link</a>.
 				<br/> 
 			</p>
 			<br/>

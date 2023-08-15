@@ -3,8 +3,10 @@ import './Cache.css'
 
 function Cache() {
 	return (
-		<div>
+		<div className='cache'>
+			<div className='top'>
 			<h2>My O(1) L1 cache </h2>
+			</div>
 			<ul>
 				<li>As you probably noticed, I love programming 
 					and everything related to computers. 

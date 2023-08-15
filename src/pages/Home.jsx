@@ -43,6 +43,11 @@ function Home() {
           <Projects />
           <CPjourney />
           <Cache />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       )
 }
