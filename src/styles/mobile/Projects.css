@@ -7,9 +7,9 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: space-between;
-	gap: 10vw;
+	gap: 4em;
 }
 
 .projects {
-	max-width: 60vw;
+	max-width: 60em;
 }

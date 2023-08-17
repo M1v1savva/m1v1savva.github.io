@@ -33,17 +33,3 @@
 .section h2 {
 	text-align: center;
 }
-
-.shadow {
- display: flex; 
-}
-
-.dark .shadow {
-	box-shadow:
-		inset #59CA4E  0 0 0 0.3vw;
-}
-
-.light .shadow {
-	box-shadow:
-		inset #f950ff  0 0 0 0.3vw;
-}

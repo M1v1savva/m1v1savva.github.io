@@ -5,39 +5,38 @@
 .stack {
 	margin: auto auto auto auto;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	gap: 4vw;
-	max-width: 60vw;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	width: 60em;
 }
 
 .dark .new-icon {
-	align-items: center;
-	justify-content: center;
+	border-radius: 1em;
+	width: 7em;
+	height: 7em;
 	display: flex;
-	border-radius: 15px;
-	padding-top: 20px;
-	width: 150px;
-	height: auto;
+	padding-top: 1.3em;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: rgba(55, 58, 59, 0.459);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.02), 0 0.6em 2em 0 rgba(0, 0, 0, 0.019);
 }
 
 .light .new-icon {
-	align-items: center;
-	justify-content: center;
+	border-radius: 1em;
+	width: 7em;
+	height: 7em;
 	display: flex;
-	border-radius: 15px;
-	padding-top: 20px;
-	width: 150px;
-	height: auto;
-	background-color: rgba(212, 219, 221, 0.459);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.github-icon {
-	background-color: #fff;
-	border-radius: 50%;
+	padding-top: 1.3em;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(117, 172, 187, 0.459);
+	box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.02), 0 0.6em 2em 0 rgba(0, 0, 0, 0.019);
 }
 
 .stack img {

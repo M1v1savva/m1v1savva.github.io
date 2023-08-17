@@ -1,28 +1,55 @@
 .readme {
-	/* border-radius: 2vw;
+	width: 40em;
+	border-radius: 1.5em;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: flex-start;
-	margin: 2vh auto 2vh auto;
-	max-width: 70%;
-	aspect-ratio: 16/13;
+	margin: 2em auto 2em auto;
 
 	font-family: Geneva;
-	font-size: 1.5vw;
-	padding: 2.1vw; */
+	font-size: 1.2em;
+	padding: 1.4em;
 }
 
-.shadow .dark {
-	max-width: 70%;
-	font-family: Geneva;
-	font-size: 1.5vw;
-	padding: 2.1vw;
+.dark .readme {
 	box-shadow:
-		inset #59CA4E  0 0 0 0.3px;
+		inset #59CA4E  0 0 0 0.3em;
 }
 
+.light .readme {
+	box-shadow:
+		inset #f950ff  0 0 0 0.3em;
+}
 
 .open-to-work {
 	font-weight: bold;
 	color: #ED254E
+}
+
+.text-readme {
+	display: flex; 
+	flex-direction: column;
+	width: 60%;
+}
+
+.github-link {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	justify-content: center;
+	align-items: center;	
+}
+
+.github-icon {
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.dark .btn-pink {
+	border-color: yellow;
+	color: yellow;
+}
+
+.light .btn-pink {
+	background-color: yellow;
 }
