@@ -1,8 +1,11 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 import { SocialIcon } from 'react-social-icons'
+import { useNavigate } from 'react-router-dom'
 
 function Readme() {
+	const navigate = useNavigate()
+
 	return (
 		<div className='section'>
 		<div className='readme'>
@@ -23,6 +26,8 @@ function Readme() {
 				<SocialIcon className='github-icon' url={'https://github.com/M1v1savva'} />
 				<br/>
 				<Button size="lg" variant="pink" onClick={() => {window.location.href = 'https://github.com/M1v1savva'}}>To github</Button>
+				<br/>
+				<Button size="lg" variant="pink" onClick={() => {navigate ('/cv')}}>To my CV</Button>
 			</div>
 		</div>
 		</div>

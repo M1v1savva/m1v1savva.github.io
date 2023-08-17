@@ -4,7 +4,7 @@ import './cv.css'
 
 function CV() {
 	return (
-		<embed src="cv.pdf" width="100%" height="1000vh"/>
+		<embed src="cv.pdf" width="1500em" height="1000em"/>
   )
 }
 
