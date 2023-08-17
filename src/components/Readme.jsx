@@ -1,9 +1,12 @@
 import React from 'react'
-import './Readme.css'
+import Button from 'react-bootstrap/Button'
+import { SocialIcon } from 'react-social-icons'
 
 function Readme() {
 	return (
-		<div className={`readme box`}>
+		<div className='section'>
+		<div className='readme'>
+			<div className='text-readme'>
 				<p>README</p>
 				<h2>Hi there! 👋</h2>
 				<p>I'm Ivan Poliakov, friends <a 
@@ -16,6 +19,13 @@ function Readme() {
 				<p>I'm passionate about full stack web development, optimization problems and AI.</p>
 				<p className='open-to-work'>Open to work in EU.</p>
 			</div>
+			<div className='github-link'>
+				<SocialIcon className='github-icon' url={'https://github.com/M1v1savva'} />
+				<br/>
+				<Button size="lg" variant="pink" onClick={() => {window.location.href = 'https://github.com/M1v1savva'}}>To github</Button>
+			</div>
+		</div>
+		</div>
 	)
 }
 

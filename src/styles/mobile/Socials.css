@@ -21,38 +21,36 @@
 	padding: 2vh;
 }
 
-.dark .qr-box {
-	border-radius: 2vw;
-	font-weight: bold;
-	text-align: center;
-	padding: 2.1vw;
+.dark .qr {
 	box-shadow:
 		inset #59CA4E  0 0 0 0.3vw;
 }
 
 .dark .Collapsible {
-	border-radius: 2vw;
-	font-weight: bold;
-	text-align: center;
-	padding: 2.1vw;
 	box-shadow:
 		inset #59CA4E  0 0 0 0.3vw;
 }
 
-.light .qr-box {
+.qr {
+	border-radius: 2vw;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+.Collapsible {
 	border-radius: 2vw;
 	font-weight: bold;
 	text-align: center;
 	padding: 2.1vw;
+}
+
+.light .qr {
 	box-shadow:
 		inset #f950ff  0 0 0 0.3vw;
 }
 
 .light .Collapsible {
-	border-radius: 2vw;
-	font-weight: bold;
-	text-align: center;
-	padding: 2.1vw;
 	box-shadow:
 		inset #f950ff  0 0 0 0.3vw;
 }

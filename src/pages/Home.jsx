@@ -10,12 +10,10 @@ import Readme from './../components/Readme'
 import Socials from './../components/Socials'
 import Stack from './../components/Stack'
 
-import './darkMode.css'
 import './Home.css'
 
 function Home() {
     const navigate = useNavigate()
-
     useEffect(() => {
         const queryParameters = new URLSearchParams(window.location.search)
         if (window.location.search.includes('cv')) {		
@@ -40,7 +38,6 @@ function Home() {
         <div className={`${theme}`}>
           <DarkModeSwitch
             className='switch'
-            style={{ marginBottom: '2rem' }}
             checked={theme == 'dark' ? true : false}
             onChange={toggleDarkMode}
           />

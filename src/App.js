@@ -1,24 +1,20 @@
-import { React, useState } from 'react'
-import MobileLayout from './layouts/MobileLayout'
-import PClayout from './layouts/PClayout'
+import { React } from 'react'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './pages/Layout'
+import CV from './pages/CV'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth)
-  const [height, setHeight] = useState(window.innerHeight)
-
-  const [onMobile, setOnMobile] = useState(window.innerHeight > window.innerWidth)
-
-  if (onMobile == true) {
-    return (
-      <MobileLayout />
-    )
-  } else {
-    return (
-      <PClayout />
-    )
-  } 
+  return (
+		<BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout/>} />
+        <Route path='cv' element={<CV/>} />/
+      </Routes>
+    </BrowserRouter>
+	) 
 }
 
 export default App

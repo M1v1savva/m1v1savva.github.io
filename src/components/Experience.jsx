@@ -1,12 +1,9 @@
 import React from 'react'
-import './Experience.css'
 
 function Experience() {
 	return (
-		<div className='experience'>
-			<div className='top'>
+		<div className='section experience'>
 			<h2>Education</h2>
-			</div>
 			<h5>Maastricht University</h5>
 			<p>Bachelor of Science in Data Science and Artificial Intelligence
 			<br/>September 2019 - December 2022</p>
@@ -14,9 +11,8 @@ function Experience() {
 				<li><b>Bachelor's thesis:</b> Trained a <b>StyleGAN</b> model for generating 
 				anime faces with just a google cloud sign-up credit bonus.</li>
 			</ul>
-			<div className='top'>
+			<br/>
 			<h2>Work Experience</h2>
-			</div>
 			<h5>Garant</h5>
 			<p>Natural Language Processing engineer
 			<br/>August 2021 - December 2021</p>

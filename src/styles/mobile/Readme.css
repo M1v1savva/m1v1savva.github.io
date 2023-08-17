@@ -1,0 +1,28 @@
+.readme {
+	/* border-radius: 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 2vh auto 2vh auto;
+	max-width: 70%;
+	aspect-ratio: 16/13;
+
+	font-family: Geneva;
+	font-size: 1.5vw;
+	padding: 2.1vw; */
+}
+
+.shadow .dark {
+	max-width: 70%;
+	font-family: Geneva;
+	font-size: 1.5vw;
+	padding: 2.1vw;
+	box-shadow:
+		inset #59CA4E  0 0 0 0.3px;
+}
+
+
+.open-to-work {
+	font-weight: bold;
+	color: #ED254E
+}

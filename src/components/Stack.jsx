@@ -1,5 +1,4 @@
 import React from 'react'
-import './Stack.css'
 
 function Stack() {
 	const parse_caption = (str) => {
@@ -14,7 +13,7 @@ function Stack() {
 		return (
 			<div className='new-icon'>
 				<figure>
-				<img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${insert_str}/${insert_str}-original.svg`}></img>
+				<img style={{width:"50%"}} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${insert_str}/${insert_str}-original.svg`}></img>
 				<figcaption>{parse_caption(insert_str)}</figcaption>
 				</figure>
 			</div>
@@ -25,7 +24,7 @@ function Stack() {
 		return (
 			<div className='new-icon'>
 				<figure>
-				<img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${insert_str}/${insert_str}-plain.svg`}></img>
+				<img style={{width:"50%"}} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${insert_str}/${insert_str}-plain.svg`}></img>
 				<figcaption>{parse_caption(insert_str)}</figcaption>
 				</figure>
 			</div>
@@ -48,7 +47,6 @@ function Stack() {
 				{gen_icon('mongodb')} 
 				{gen_icon('react')}
 				{gen_icon('googlecloud')}
-				{gen_icon('react')}
 				{gen_icon('pytorch')} 
 				{gen_icon('tensorflow')}
 				{gen_icon('numpy')} 

@@ -1,59 +1,90 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import './Projects.css'
-
-import { useNavigate } from "react-router-dom";
 
 function Projects() {
-	const navigate = useNavigate()
 
-	const final_url = () => {
-			return <p>kek</p>
+	const redirect = (url) => {
+		window.location.href = url
+	}	
+
+	const checkButton = (url) => {
+		if (url !== undefined) {
+			return (
+				<div>
+				<Button variant="primary" onClick={() => redirect(url)}>
+					Go to the website
+				</Button>
+				<br/>
+				<br/>
+				</div>
+			) 
+		} else {
+				return (
+					<>
+					</>
+				)
+		}
+	}
+
+	const getCard = (title, back_src, wi, he, txt, url, url2) => {
+		return ( 
+			<Card bg='Secondary' style={{ width: wi, height: he }}>
+				<Card.Img variant="top" src={back_src} />
+				<Card.Body>
+					<Card.Title>{title}</Card.Title>
+					<Card.Text>
+						{txt}
+					</Card.Text>
+					{checkButton(url2)}
+					<Button variant="primary" onClick={() => redirect(url)}>Go to github</Button>
+				</Card.Body>
+			</Card>
+		)
 	}
 
 	return (
 		<div className='projects'>
 			<br/>
-			<div className='top'>
-				<h2>Personal projects</h2>
-			</div>
-			<p>start url: {window.location.search}</p>
-			<p>final url: {final_url()}</p>
+			<h2>Personal projects</h2>
 			<br/>
 			<div className='row1'>
-			<Card bg='Secondary' style={{ width: '12rem', height: '22rem' }}>
-				<Card.Img variant="top" src="mini-renderer.png" />
-				<Card.Body>
-					<Card.Title>Simple renderer from scratch</Card.Title>
-					<Card.Text>
-						3d graphics
-					</Card.Text>
-					<Button onClick={() => {navigate('/cv')}}>See cv</Button>
-					{/*<Button onClick={() => {window.location.href = 'https://github.com/M1v1savva/mini-renderer'}} variant="primary">Go to github</Button> */}
-				</Card.Body>
-			</Card>
+			{getCard(
+				'Simple renderer from scratch',
+				'mini-renderer.png',
+				'20rem', '33rem',
+				'My implementations of series of articles on 3D graphics',
+				'https://github.com/M1v1savva/mini-renderer'
+			)}
 
-			<Card bg='Secondary'style={{ width: '12rem', height: '26rem' }}>
-				<Card.Img variant="top" src="chesslines.png" />
-				<Card.Body>
-					<Card.Title>Chesslines</Card.Title>
-					<Card.Text>
-						Intuitive app to store your chess opening repertoire. <i>Still in development</i>
-					</Card.Text>
-					<Button onClick={() => {window.location.href = 'https://chesslines.onrender.com/'}} variant="primary">Go to the website</Button>
-					<br/>
-					<br/>
-					<Button onClick={() => {window.location.href = 'https://github.com/M1v1savva/chesslines'}} variant="primary">Go to github</Button>
-				</Card.Body>
-			</Card>
+			{getCard(
+				'Chesslines',
+				'chesslines.png',
+				'20rem', '33rem',
+				'An intuitive web app to store your chess opening repertoire. Still in development but a lot of functionality is already there',
+				'https://github.com/M1v1savva/chesslines',
+				'https://chesslines.onrender.com/'
+			)}
+
+		{getCard(
+				'Pentomino Tetris',
+				'tetris.png',
+				'20rem', '33rem',
+				'One of university team projects. Our group developed an aethetic pentomino tetris game and AI that plays much better than us.',
+				'https://github.com/M1v1savva/tetris'
+			)}
+
+		{getCard(
+				'My bachelor thesis',
+				'anime.png',
+				'20rem', '33rem',
+				'Generation of anime faces with conditional StyleGAN model and transfer learning',
+				'https://github.com/M1v1savva/anime-thesis'
+			)}
+
 			</div>
 			<br/>
 			<br/>
-
-			<div className='top'>
-				<h2>Team projects</h2>
-			</div>
 		</div>
 	)
 }

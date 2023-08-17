@@ -1,0 +1,35 @@
+.dark {
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light {
+  background-color: #e0e0e0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark a:link, .dark a:visited, .dark a:hover, .dark a:active {
+  color: #59CA4E;
+}
+
+.light a:link, .light a:visited, .light a:hover, .light a:active {
+  color: #f950ff;
+}
+
+.router {
+	height: 100%;
+}
+
+.section {
+	width: 100%;
+}
+
+.section h2 {
+	text-align: center;
+}

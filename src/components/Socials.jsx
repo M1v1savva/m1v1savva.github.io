@@ -1,45 +1,40 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import Collapsible from 'react-collapsible'
-import './Socials.css'
 
 function Socials() {
+	const getIcon = (item) => {	
+		return (
+			<div className='icon'>
+				<SocialIcon url={item.url} />
+				<p>{item.label}</p>
+			</div>
+		)
+	}
+
+	const socials = [
+		{label: 'LinkedIn', url: 'https://www.linkedin.com/in/m1v1savva'},
+		{label: 'GitHub', url: 'https://github.com/M1v1savva'},
+		{label: 'Email', url: 'mailto:ivan.polyakov.01@gmail.com'},
+		{label: 'Telegram', url: 'https://t.me/M1v1savva1601'},
+		{label: 'WhatsApp', url: 'https://api.whatsapp.com/qr/ARG2TSUIWOXOA1'}
+	]
+
 	return (
+		<div className='section'>
 		<div className='socials-container'>
 			<h2>Socials</h2>
 			<div className='icons'>
-				<div className='icon'>
-					<SocialIcon url='https://www.linkedin.com/in/m1v1savva' />
-					<p>LinkedIn</p>
-				</div>
-
-				<div className='icon'>
-					<SocialIcon className='github-icon' url='https://github.com/M1v1savva' />
-					<p>GitHub</p>
-				</div>
-
-				<div className='icon'>
-					<SocialIcon url='mailto:ivan.polyakov.01@gmail.com' />
-					<p>Email</p>
-				</div>
-
-				<div className='icon'>
-					<SocialIcon url='https://t.me/M1v1savva1601' />
-					<p>Telegram</p>
-				</div>
-
-				<div className='icon'>
-					<SocialIcon url='https://api.whatsapp.com/qr/ARG2TSUIWOXOA1' />
-					<p>WhatsApp</p>
-				</div>
+				{socials.map((item) => (getIcon(item)))}
 			</div>
 
-			<Collapsible className='qr-box' trigger='Scan WhatsApp QR code to message instantly'>
+			<Collapsible className='box qr' trigger='Click to instantly scan WhatsApp QR code'>
 				<br/>
 				<img src='qr.jpg' />
 			</Collapsible>
 
 			<br/>
+		</div>
 		</div>
 	)
 }
