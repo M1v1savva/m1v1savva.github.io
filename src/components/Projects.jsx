@@ -52,7 +52,7 @@ function Projects() {
 			{getCard(
 				'Simple renderer from scratch',
 				'mini-renderer.png',
-				'20rem', '33rem',
+				'20rem', '35rem',
 				'My implementations of series of articles on 3D graphics',
 				'https://github.com/M1v1savva/mini-renderer'
 			)}
@@ -60,7 +60,7 @@ function Projects() {
 			{getCard(
 				'Chesslines',
 				'chesslines.png',
-				'20rem', '33rem',
+				'20rem', '35rem',
 				'An intuitive web app to store your chess opening repertoire. Still in development but a lot of functionality is already there',
 				'https://github.com/M1v1savva/chesslines',
 				'https://chesslines.onrender.com/'
@@ -69,15 +69,15 @@ function Projects() {
 		{getCard(
 				'Pentomino Tetris',
 				'tetris.png',
-				'20rem', '33rem',
-				'One of university team projects. Our group developed an aethetic pentomino tetris game and AI that plays much better than us.',
+				'20rem', '35rem',
+				'One of university team projects. Our group developed an aethetic pentomino tetris game, as well as an AI that can play the game',
 				'https://github.com/M1v1savva/tetris'
 			)}
 
 		{getCard(
 				'My bachelor thesis',
 				'anime.png',
-				'20rem', '33rem',
+				'20rem', '35rem',
 				'Generation of anime faces with conditional StyleGAN model and transfer learning',
 				'https://github.com/M1v1savva/anime-thesis'
 			)}

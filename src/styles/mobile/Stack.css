@@ -10,15 +10,15 @@
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
-	width: 60em;
+	width: 25em;
 }
 
 .dark .new-icon {
-	border-radius: 1em;
+	border-radius: 0.33em;
 	width: 7em;
 	height: 7em;
 	display: flex;
-	padding-top: 1.3em;
+	padding-top: 2em;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -27,11 +27,11 @@
 }
 
 .light .new-icon {
-	border-radius: 1em;
+	border-radius: 0.33em;
 	width: 7em;
 	height: 7em;
 	display: flex;
-	padding-top: 1.3em;
+	padding-top: 2em;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -40,5 +40,5 @@
 }
 
 .stack img {
-	width: 6vw;
+	width: 2em;
 }

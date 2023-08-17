@@ -2,10 +2,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 18em;
 }
 
 .socials-container img {
-	max-width: 15em;
+	width: 10em;
 }
 
 .github-icon {
@@ -23,38 +24,38 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2em;
+	padding: 0.66em;
 }
 
 .dark .qr {
 	box-shadow:
-		inset #59CA4E  0 0 0 0.3em;
+		inset #59CA4E  0 0 0 0.1em;
 }
 
 .dark .Collapsible {
 	box-shadow:
-		inset #59CA4E  0 0 0 0.3em;
+		inset #59CA4E  0 0 0 0.1em;
 }
 
 .qr {
-	border-radius: 2em;
+	border-radius: 0.66em;
 	font-weight: bold;
 	text-align: center;
 }
 
 .Collapsible {
-	border-radius: 2em;
+	border-radius: 0.66em;
 	font-weight: bold;
 	text-align: center;
-	padding: 2.1em;
+	padding: 0.7em;
 }
 
 .light .qr {
 	box-shadow:
-		inset #f950ff  0 0 0 0.3em;
+		inset #f950ff  0 0 0 0.1em;
 }
 
 .light .Collapsible {
 	box-shadow:
-		inset #f950ff  0 0 0 0.3em;
+		inset #f950ff  0 0 0 0.1em;
 }

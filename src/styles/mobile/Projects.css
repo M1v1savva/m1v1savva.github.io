@@ -4,12 +4,13 @@
 
 .row1 {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: space-between;
-	gap: 4em;
+	gap: 1em;
 }
 
 .projects {
-	max-width: 60em;
+	width: 20em;
 }

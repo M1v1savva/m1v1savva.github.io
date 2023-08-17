@@ -16,7 +16,7 @@ function Cache() {
 				<li>In 2014 I saw Leo Messi play on TV and have been a massive football fan since. 
 					Playing and watching.</li>
 				<li>My views on consciousness and free will are largely inspired by Joscha Bach.</li>
-				<li>I agree with a perspective that many economic and social issues are structural in nature.</li>
+				<li>I agree with the perspective that many economic and social issues are structural in nature.</li>
 			</ul>
 		</div>
 	)

@@ -22,7 +22,7 @@ function Home() {
     }, [])
 
     const [theme, setTheme] = useState(
-        localStorage.getItem('theme') || 'dark'
+        localStorage.getItem('theme') || 'light'
     )
     
     const toggleDarkMode = () => {

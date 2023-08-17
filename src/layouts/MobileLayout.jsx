@@ -12,7 +12,7 @@ function MobileLayout() {
 	import('./../styles/mobile/main.css')
 
 	return (
-		<div style={{width: "95vw"}}> 
+		<div style={{width: "70vw"}}> 
 			<Home />
 		</div>
 	)
