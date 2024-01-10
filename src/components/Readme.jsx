@@ -10,7 +10,6 @@ function Readme() {
 		<div className='section'>
 		<div className='readme'>
 			<div className='text-readme'>
-				<p>README</p>
 				<h2>Hi there! 👋</h2>
 				<p>I'm Ivan Poliakov, friends <a 
 					href="https://en.wikipedia.org/wiki/Eastern_Slavic_naming_customs#Diminutive_forms"
