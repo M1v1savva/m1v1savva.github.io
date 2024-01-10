@@ -1,1 +1,1 @@
-{"version":3,"file":"static/css/785.f449d3f5.chunk.css","mappings":"AAAA,KACC,iBACD,CAEA,OACC,cACD","sources":["styles/album/Cache.css"],"sourcesContent":[".top{\n\ttext-align: center;\n}\n\n.cache {\n\tmax-width: 60em;\n}"],"names":[],"sourceRoot":""}
+{"version":3,"file":"static/css/785.f449d3f5.chunk.css","mappings":"AAAA,KACC,iBACD,CAEA,OACC,cACD","sources":["styles/album/Cache.css"],"sourcesContent":[".top{\r\n\ttext-align: center;\r\n}\r\n\r\n.cache {\r\n\tmax-width: 60em;\r\n}"],"names":[],"sourceRoot":""}
