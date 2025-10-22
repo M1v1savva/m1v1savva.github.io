@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan Poliakov</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="book">
+    <div class="name">Ivan Poliakov</div>
+    <div id="about">
+      <div class="about-text">
+        <p>
+          I am Ivan (Vanya) Poliakov, a Freelance ML and Web developer. <br/>
+          I specialize in building AI web apps and taking them from concept to production. <br/>
+          Currently working on a MSc degree in AI at Maastricht University.
+        </p>
+        <h3>Short Summary</h3>
+        <p>
+          ML engineer, 1 year of industry experience. <br/>
+          Hands-on experience with generative AI for images and video, search and retrieval, 
+          agentic workflows for advertisements and social media.<br/>
+          Strong background in performance optimization and building scalable web apps and search systems.<br/>
+          Exceptional problem-solving and stress resistance ability, as evident by my codeforces profile
+          which was ranked in top ~5% globally at peak rating.<br/>
+          I follow the latest AI research and tools.
+        </p>
+      </div>
+      <div>
+        <img src="pfp.png" alt="Your photo" class="profile">
+        <div class="contact-links">
+          <p>WhatsApp: +31 627 21 72 51 </p>
+          <p>Email: ivan.polyakov.01@gmail.com </p>
+          <p><p><a href="https://github.com/M1v1savva/M1v1savva/blob/main/cv.pdf">CV</a> · <a href="https://github.com/M1v1savva">GitHub</a> · <a href="https://codeforces.com/profile/M1v1savva">Codeforces</a> · <a href="https://www.linkedin.com/in/m1v1savva">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3> Projects </h3>
+
+      <div class="project-header">
+        <h4> Robotic arm playing beer pong autonomously </h4>
+        <a href="https://github.com/M1v1savva/juice-pong" class="github-link" target="_blank" rel="noopener noreferrer">
+          <svg class="github-icon" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </div>
+      <p>
+          As part of a BSc project, I worked with 3 other students to build software 
+          for a robotic arm that plays beer pong autonomously. We fine-tuned YOLO to detect cups 
+          and the ball, then used a C library to control the arm based on overhead camera input. 
+          We also implemented aim auto-adjustment for missed shots.
+      </p>
+      <div class="gallery">
+        <video src="media/robot/complex.mp4" class="gallery-item" muted></video>
+        <video src="media/robot/default.mp4" class="gallery-item" muted></video>
+      </div>
+
+      <div class="project-header">
+        <h4> 3D renderer in C++ with zero dependencies </h4>
+        <a href="https://github.com/M1v1savva/mini-renderer" class="github-link" target="_blank" rel="noopener noreferrer">
+          <svg class="github-icon" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </div>
+      <p>
+          The renderer loads an .obj file, with or without texture mapping, and paints a scene into .tga file.
+          It supports basic lighting and camera movement, z-buffering,
+          Gouraud and Phong shading models.
+      </p>
+      <div class="gallery">
+        <img src="media/renderer/results.png" alt="3D render example" class="gallery-item">
+      </div>
+      
+      <div class="project-header">
+        <h4> Java Tetris with autoplay </h4>
+        <a href="https://github.com/M1v1savva/tetris" class="github-link" target="_blank" rel="noopener noreferrer">
+          <svg class="github-icon" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </div>
+      <p>
+          Java tetris setup for gaming and autoplay simulations.
+          You can play yourself or run an autoplay visualization.
+          Autoplay parameters were optimized using a genetic algorithm.
+      </p>
+      <div class="gallery">
+        <video src="media/tetris/autoplay.mp4" poster="media/tetris/thumbnail.png" class="gallery-item" muted></video>
+      </div>
+      
+      <div class="project-header">
+        <h4> 3D image-stitching tool </h4>
+        <a href="https://github.com/M1v1savva/image_stitching" class="github-link" target="_blank" rel="noopener noreferrer">
+          <svg class="github-icon" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </div>
+      <p > 
+          A 3D image-stitching tool that aligns two overlapping photos (e.g., from a panorama) 
+          by estimating their homography transform with Robust Regression and warping one of the images onto the other.
+      </p>
+      <div class="gallery">
+        <img src="media/stitching/1.jpg" alt="One" class="gallery-item">
+        <img src="media/stitching/2.jpg" alt="Two" class="gallery-item">
+        <img src="media/stitching/3.jpg" alt="Three" class="gallery-item">
+      </div>
+    </div>
+
+    <div class="section">
+      <h3> Tech Stack </h3>
+      <p><strong>Programming Languages:</strong> Python, C++, JavaScript, Java</p>
+      <p><strong>ML & Deep Learning:</strong>
+        PyTorch, scikit-learn, Transformers, LangChain, NumPy, SciPy, statsmodels</p>
+      <p><strong>Data & Visualization:</strong>
+        pandas, OpenCV, ffmpeg, Matplotlib, seaborn</p>
+      <p><strong>Full-stack Development:</strong>
+        FastAPI, Django, React, Qt, MongoDB, PostgreSQL</p>
+      <p><strong>Tools & Platforms:</strong>
+        Docker, Git, CI/CD, Linux, Google Cloud Platform</p>
+    </div>
+
+    <div class="section">
+      <h3>Education</h3>
+      <p>2024 - 2026</p>
+      <h4>MSc in Artificial Intelligence at Maastricht University</h4>
+      <ul>
+          <li> <strong>Internship:</strong> In fall 2024 I did data mining and developed agentic frameworks for a stealth startup. </li>
+          <li> Coursework: I'm taking the courses related to deep learning and probability theory. </li>
+          <li> Competitions: In fall 2024 I formed the first team in the history of my university to go to ICPC NWERC, semi-finals of arguably the most prestigious programming competition in the world. </li>
+          <li> Research: Currently laying out preparation research for my MSc thesis. </li>
+      </ul>
+
+      <p>2019-2023</p>
+      <h4>BSc in Data Science at Maastricht University</h4>
+      <ul>
+          <li> <strong>Internship:</strong> In fall of 2021 I worked on a similarity search model for legal referencing company Garant. </li>
+          <li> Project: My last university team project was making a software for a robotic arm playing beer pong.
+              We used an overhead camera to detect the cups on the grid and make the right shot, 
+              with an aim adjustment mechanism to counteract misses.
+          </li>
+          <li> Thesis: My BSc thesis was about pretraining a conditional StyleGAN model from scratch on limited resources.
+          </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <video id="lightbox-video" controls></video>
+    </div>
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxVideo = document.getElementById('lightbox-video');
+    const closeBtn = document.querySelector('.close');
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', function() {
+        lightbox.style.display = 'flex';
+        
+        if (this.tagName === 'IMG') {
+          lightboxImg.src = this.src;
+          lightboxImg.style.display = 'block';
+          lightboxVideo.style.display = 'none';
+        } else if (this.tagName === 'VIDEO') {
+          lightboxVideo.src = this.src;
+          lightboxVideo.style.display = 'block';
+          lightboxImg.style.display = 'none';
+          lightboxVideo.play();
+        }
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+      lightboxVideo.pause();
+      lightboxVideo.src = '';
+      lightboxImg.src = '';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+        lightboxVideo.pause();
+        lightboxVideo.src = '';
+        lightboxImg.src = '';
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+        lightbox.style.display = 'none';
+        lightboxVideo.pause();
+        lightboxVideo.src = '';
+        lightboxImg.src = '';
+      }
+    });
+  </script>
+</body>
+</html>
